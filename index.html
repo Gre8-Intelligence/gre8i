@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/logo.png" type="">
+
+  <title> Gre8i </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+   /* General Styles */
+.bg_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.slider_section {
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.slider_section .detail-box h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.slider_section .detail-box h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.slider_section .changing-phrase {
+  border-right: 2px solid #fff;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+.hero-mouse {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -15px;
+  text-align: center;
+  z-index: 100;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.hero-mouse h3 {
+  margin-left: -14px;
+  padding-top: 15px;
+}
+
+.mouse-icon {
+  width: 25px;
+  height: 45px;
+  border-radius: 15px;
+  position: relative;
+  border: 2px solid #dedede;
+  text-align: center;
+}
+
+.mouse-icon span {
+  width: 3px;
+  height: 8px;
+  margin: 2px auto 0;
+  display: block;
+  background: #dedede;
+  border-radius: 5px;
+  -webkit-animation: 1.2s ease infinite wheel-up-down;
+  animation: 1.2s ease infinite wheel-up-down;
+}
+
+.service_section {
+  padding: 60px 0;
+  background-color: #fff;
+  color: #000;
+}
+
+.service_content h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.service_content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.service_list {
+  margin-top: 20px;
+}
+
+.service_item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.service_item:hover {
+  transform: translateY(-5px);
+}
+
+.service_number {
+  background-color: #00bbf0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.service_text {
+  font-size: 20px;
+}
+
+.service_image {
+  margin-left: 100px; /* Adjust this value to push the image to the right */
+}
+
+.indented-text {
+  text-indent: 50px; /* Adjust the value to your desired indentation */
+}
+
+@media (max-width: 768px) {
+  .service_section {
+    padding: 30px 0;
+  }
+
+  .service_content h2 {
+    font-size: 28px;
+  }
+
+  .service_content p {
+    font-size: 16px;
+  }
+
+  .service_item {
+    font-size: 18px;
+  }
+
+  .service_image {
+    margin-left: 0; /* Reset margin for mobile view */
+  }
+
+  .bg_image {
+    object-fit: cover; /* Ensure the background image covers the entire homepage */
+  }
+
+  .hero-mouse {
+    bottom: 10px; /* Adjust position to avoid overlapping with changing text */
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.about-img {
+  animation: float 2s ease-in-out infinite;
+}
+
+.team-card {
+  transition: transform 0.99s ease-in-out;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+}
+
+@-webkit-keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 20px;
+    opacity: 0;
+  }
+}
+
+@keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 20px;
+    opacity: 0;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
+
+.slider_section .changing-phrase {
+  color: #ff5722;
+}
+
+@media (max-width: 768px) {
+  .hero_bg_box {
+    display: none;
+  }
+
+  .slider_section {
+    background: url('images/tech_earth.jpg') no-repeat center center/cover !important;
+  }
+}
+
+.slider_section .box {
+  font-size: 35px; /* Increased font size */
+  font-weight: normal; /* Regular text */
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: orange; /* Changed color to orange */
+}
+
+.slider_section .b1 {
+  animation: slider_ani1 10s infinite;
+}
+
+.slider_section .b2 {
+  animation: slider_ani2 10s infinite;
+}
+
+.slider_section .b3 {
+  animation: slider_ani3 10s infinite;
+}
+
+@keyframes slider_ani1 {
+  0%, 25% {
+    opacity: 0;
+  }
+  25%, 50% {
+    opacity: 1;
+  }
+  50%, 75% {
+    opacity: 0;
+  }
+}
+
+@keyframes slider_ani2 {
+  0%, 25% {
+    opacity: 0;
+  }
+  25%, 50% {
+    opacity: 0;
+  }
+  50%, 75% {
+    opacity: 1;
+  }
+  75%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slider_ani3 {
+  0%, 50% {
+    opacity: 0;
+  }
+  50%, 75% {
+    opacity: 0;
+  }
+  75%, 100% {
+    opacity: 1;
+  }
+}
+
+/* Navbar Text Bold */
+.navbar-nav .nav-link {
+  font-weight: bold;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <img src="images/Gre8i Website Home 2 .png" alt="Hero Image" class="bg_image">
+    </div>
+
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              GRE8i
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="team.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
+              </li>
+              <form class="form-inline">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="detail-box">
+              <h1>
+                Unlocking the Power of Data <br> for Operational Excellence.
+              </h1>
+              <h2 id="changing-text" style="color: #00bbf0;">We are Gre8 Intelligence,</h2>
+              <div class="banner">
+                <div class="banner-text">
+                  <div class="text-wrapper">
+                    <div class="box b1">Limitless Possibilities</div>
+                    <div class="box b2">One Platform</div>
+                    <div class="box b3">Connecting the World</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="hero-mouse anchor" href="#services">
+        <div class="mouse-icon"><span></span></div>
+      </a>
+    </section>
+
+    <!-- end slider section -->
+  </div>
+
+  <!-- service section -->
+  <section class="service_section layout_padding" id="services">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="service_content">
+            <h2>Data-driven Decision-making</h2>
+            <p>Gre8 Intelligence backend system is a multifaceted platform designed to empower businesses and industries with advanced technological capabilities.</p>
+            <div class="service_list">
+              <div class="service_item">
+                <div class="service_number">01</div>
+                <div class="service_text">Expand Your Reach</div>
+              </div>
+              <div class="service_item">
+                <div class="service_number">02</div>
+                <div class="service_text">Annualized Growth</div>
+              </div>
+              <div class="service_item">
+                <div class="service_number">03</div>
+                <div class="service_text">Automate Your Processes</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="images/service.webp" alt="Service Image" class="img-fluid rounded service_image">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end service section -->
+
+  <!-- about section -->
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          About <span>Us</span>
+        </h2>
+        <h2 class="indented-text">
+          Make Smarter Decisions Faster.
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="images/about_index.webp" alt="" class="about-img">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h3>
+              We Are GRE8 Intelligence
+            </h3>
+            <p>
+              We are dedicated to revolutionizing the way businesses operate in the digital age. Our comprehensive platform harnesses the power of emerging technologies to drive data-driven decision-making and operational excellence across industries.
+            </p>
+            <p>
+              Our platform offers a holistic approach to business optimization, addressing the needs of various departments including legal, sales, human resources, customer service, and more. From customizable solutions to white-label capabilities, we tailor our offerings to meet the unique requirements of each organization.
+            </p>
+            <a href="about.html">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about section -->
+
+  <!-- why section -->
+  <section class="why_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Why Choose <span>Us</span>
+        </h2>
+      </div>
+      <div class="why_container">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/comprehensive.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Comprehensive Solutions
+            </h5>
+            <p>
+              Our integrated platform offers a one-stop solution for all your business needs,
+              streamlining your operations and enhancing productivity.
+              By bringing together essential tools such as project management,
+              customer relationship management (CRM), inventory control,
+              and financial reporting into a single, user-friendly interface,
+              we eliminate the inefficiencies associated with managing multiple systems.
+              This comprehensive approach not only saves time and reduces costs
+              but also provides real-time data analytics and reporting, empowering you to make
+              informed decisions.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/customization.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Customization
+            </h5>
+            <p>
+              We provide customizable solutions tailored to your specific requirements and brand identity,
+              ensuring that our platform aligns perfectly with your business goals and unique vision.
+              Our customization options allow you to adapt the system's features, workflows,
+              and aesthetics to fit your operational needs and brand style.
+              Whether it's adjusting the user interface to match your branding or configuring functionalities to streamline your processes,
+              our flexible approach guarantees a seamless integration into your existing ecosystem.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/flexibility.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Flexibility
+            </h5>
+            <p>
+              Our subscription-based model and modular offerings ensure scalability and affordability,
+              providing your business with the flexibility it needs to grow and adapt.
+              With our approach, you can choose and pay for only the features and services you require,
+              making it easy to scale up or down as your business evolves.
+              This not only keeps costs manageable but also allows you to customize your solution
+              to fit your specific needs at any given time. Whether you’re a small startup
+              or an expanding enterprise, our flexible model ensures that you always have access to the
+              right tools and capabilities without overextending your budget.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/innovation.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Innovation
+            </h5>
+            <p>
+              We stay ahead of the curve with continuous research and development,
+              ensuring our platform remains at the forefront of technological advancements.
+              Our dedicated team of experts consistently explores the latest trends and innovations,
+              integrating cutting-edge technologies to enhance our offerings.
+              By prioritizing R&D, we not only improve our existing features
+              but also anticipate future needs, providing you with state-of-the-art solutions that keep
+              your business competitive.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="btn-box">
+        <a href="service.html">
+          Read More
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- end why section -->
+
+  <!-- team section -->
+  <section class="team_section layout_padding">
+    <div class="container-fluid">
+      <div class="heading_container heading_center">
+        <h2 class="">
+          Our <span> Team</span>
+        </h2>
+      </div>
+
+      <div class="team_container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6">
+            <div class="box team-card">
+              <div class="img-box">
+                <img src="images/Mann.jpg" class="img1" alt="Bill Mann">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Bill Mann
+                </h5>
+                <p>
+                  Founder
+                </p>
+                <div class="achievement-box">
+                  <p>
+                    A visionary thinker that redefines industry trends, and his unwavering commitment to excellence has transforms businesses.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="box team-card">
+              <div class="img-box">
+                <img src="images/Arthur.jpg" class="img1" alt=" Arthur Njenga">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Arthur Njenga
+                </h5>
+                <p>
+                  Relationships manager and Talent operations
+                </p>
+                <div class="achievement-box">
+                  <p>
+                    Puts together high-performance teams and stays in touch with stakeholders to ensure mutual satisfaction
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="box team-card">
+              <div class="img-box">
+                <img src="images/martin.jpeg" class="img1" alt="Martin Wanjia">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Martin Wanjia
+                </h5>
+                <p>
+                  CTO
+                </p>
+                <div class="achievement-box">
+                  <p>
+                    Machine Learning and AI Engineer with experience in building models using Keras, tensorflow, pandas and numpy.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="box team-card">
+              <div class="img-box">
+                <img src="images/Boaz.jpeg" class="img1" alt="Josephine Allard">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Boaz Leleina
+                </h5>
+                <p>
+                  Systems Engineer
+                </p>
+                <div class="achievement-box">
+                  <p>
+                    A One-Person Powerhouse that transforms Ideas into Reality. Ensure delivery of high quality and standard software
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="box team-card">
+              <div class="img-box">
+                <img src="images/Joseph.jpeg" class="img1" alt="Alice Johnson">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Joseph Wathome:
+                </h5>
+                <p>
+                  AI and Machine Learning Engineer
+                </p>
+                <div class="achievement-box">
+                  <p>
+                    A creative developer that builds machine learning models to solve real-world problems.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="box team-card">
+              <div class="img-box">
+                <img src="images/victoria.jpg" class="img1" alt="Victoria Kahumbura">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Victoria Kahumbura
+                </h5>
+                <p>
+                  Digital strategist
+                </p>
+                <div class="achievement-box">
+                  <p>
+                    She has the expertise to lead complex projects with ease, ensuring seamless execution and optimal results. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end team section -->
+
+  <!-- client section -->
+  <section class="client_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center psudo_white_primary mb_45">
+        <h2>
+          Word from Our <span>Customers</span>
+        </h2>
+      </div>
+      <div class="carousel-wrap ">
+        <div class="owl-carousel client_owl-carousel">
+          <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/client1.jpg" alt="" class="box-img">
+              </div>
+              <div class="detail-box">
+                <div class="client_id">
+                  <div class="client_info">
+                    <h6>
+                      James Smith
+                    </h6>
+                    <p>
+                      CEO, Tech Solutions
+                    </p>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  "Gre8 Intelligence has revolutionized our business operations. The data-driven insights have allowed us to optimize our processes and achieve remarkable growth."
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/client2.jpg" alt="" class="box-img">
+              </div>
+              <div class="detail-box">
+                <div class="client_id">
+                  <div class="client_info">
+                    <h6>
+                      Maria Johnson
+                    </h6>
+                    <p>
+                      Marketing Director, Creative Agency
+                    </p>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  "The customized solutions provided by Gre8 Intelligence have aligned perfectly with our business needs. Their platform is a game-changer for our marketing strategies."
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/client1.jpg" alt="" class="box-img">
+              </div>
+              <div class="detail-box">
+                <div class="client_id">
+                  <div class="client_info">
+                    <h6>
+                      Michael Lee
+                    </h6>
+                    <p>
+                      Operations Manager, Manufacturing Co.
+                    </p>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  "With Gre8 Intelligence, we've seen a significant improvement in our operational efficiency. Their innovative platform has streamlined our processes and boosted productivity."
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/client2.jpg" alt="" class="box-img">
+              </div>
+              <div class="detail-box">
+                <div class="client_id">
+                  <div class="client_info">
+                    <h6>
+                      Linda Williams
+                    </h6>
+                    <p>
+                      HR Head, Global Enterprises
+                    </p>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  "The flexibility and scalability of Gre8 Intelligence's platform have been crucial for our HR operations. Their support and expertise are unmatched."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end client section -->
+
+  <!-- info section -->
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_contact">
+            <h4>
+              Address
+            </h4>
+            <div class="contact_link_box">
+              <a href="https://www.google.com/maps/search/?api=1&query=Lady+Liberty+New+York" target="_blank">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location
+                </span>
+              </a>
+              <a href="https://wa.me/11234567890" target="_blank">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +01 1234567890
+                </span>
+              </a>
+              <a href="mailto:info@gre8i.com">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  info@gre8i.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="info_social">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_detail">
+            <h4>
+              Get Started Today:
+            </h4>
+            <p>
+              Ready to take your business to the next level?
+              Contact us to learn more about how Gre8 Intelligence can empower your organization
+              with data-driven excellence.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mx-auto info_col">
+          <div class="info_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="info_links">
+              <a class="active" href="index.html">
+                Home
+              </a>
+              <a class="" href="about.html">
+                About
+              </a>
+              <a class="" href="service.html">
+                Services
+              </a>
+              <a class="" href="blog.html">
+                Blog
+              </a>
+              <a class="" href="team.html">
+                Contact
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col ">
+          <h4>
+            Subscribe
+          </h4>
+          <form action="#">
+            <input type="text" placeholder="Enter email" />
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="#">Gre8 Intelligence</a>
+      </p>
+    </div>
+  </section>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+  <!-- Custom JavaScript for changing text -->
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+      const phrases = ['Limitless Possibilities', 'One Platform', 'Connecting the World'];
+      let currentPhraseIndex = 0;
+      let currentLetterIndex = 0;
+      let isDeleting = false;
+      const typingSpeed = 150;
+      const deletingSpeed = 100;
+      const delayBetweenPhrases = 2000;
+
+      const changingPhraseElement = document.querySelector('.changing-phrase');
+
+      function type() {
+        const currentPhrase = phrases[currentPhraseIndex];
+        const partialPhrase = currentPhrase.substring(0, currentLetterIndex);
+        changingPhraseElement.textContent = partialPhrase;
+
+        if (!isDeleting && currentLetterIndex < currentPhrase.length) {
+          currentLetterIndex++;
+          setTimeout(type, typingSpeed);
+        } else if (isDeleting && currentLetterIndex > 0) {
+          currentLetterIndex--;
+          setTimeout(type, deletingSpeed);
+        } else if (!isDeleting && currentLetterIndex === currentPhrase.length) {
+          isDeleting = true;
+          setTimeout(type, delayBetweenPhrases);
+        } else if (isDeleting && currentLetterIndex === 0) {
+          isDeleting = false;
+          currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+          setTimeout(type, typingSpeed);
+        }
+      }
+
+      type();
+    });
+
+    document.querySelector('.hero-mouse').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector('#services').scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  </script>
+
+</body>
+
+</html>
